@@ -1,0 +1,14 @@
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/demo-minio?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: szq102189
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      minimum-idle: 3
+      maximum-pool-size: 10
+      max-lifetime: 30000   #????30????????1800?
+      connection-test-query: SELECT 1
+server:
+  port: 8081
